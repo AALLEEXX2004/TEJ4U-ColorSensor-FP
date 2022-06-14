@@ -26,7 +26,7 @@ def loop():
 
     GPIO.output(s2,GPIO.LOW)
     GPIO.output(s3,GPIO.LOW)
-    time.sleep(0.3)
+    time.sleep(0.5)
     start = time.time()
     for impulse_count in range(NUM_CYCLES):
       GPIO.wait_for_edge(signal, GPIO.FALLING)
